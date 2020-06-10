@@ -1,18 +1,14 @@
-spring: 
-  profiles:
-    active:
-    - dev
---- 
-server:
-  port: 8001
-spring: 
-   profiles: dev
-   application: 
-    name: microservicecloud-config-dept-client
+spring:
+	profiles:
+		active:
+		- dev
 ---
-server:
-  port: 8001
-spring: 
-   profiles: test
-   application: 
-    name: microservicecloud-config-dept-client
+spring:
+	profiles: dev
+	application:
+		name:microservicecloud-config-vivian-dev
+---
+spring:
+	profiles: test
+	application:
+		name:microservicecloud-config-vivian-test
